@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:fillViewport="true"
+    tools:context=".activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:paddingTop="65dp"
+        android:paddingBottom="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont"
+            android:text="Unijobs"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="50sp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/lora"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingExtra="4.5sp"
+            android:text="Você tem algum talento escondido?\nGanhe dinheiro com isso!"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="185dp"
+            android:layout_marginRight="18dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounder_border"
+            android:fillViewport="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:elevation="20dp">
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_weight="0"
+                android:backgroundTint="#99ffffff"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/lato"
+                android:hint="EMAIL"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#99ffffff"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="40sp"
+                app:autoSizeMaxTextSize="60sp"
+                app:autoSizeStepGranularity="2sp" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_weight="0"
+                android:backgroundTint="#99ffffff"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/lato"
+                android:hint="SENHA"
+                android:inputType="textPassword"
+                android:textColorHint="#99ffffff"
+                app:autoSizeMinTextSize="40sp"
+                app:autoSizeMaxTextSize="60sp"
+                app:autoSizeStepGranularity="2sp" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_weight="0"
+                android:backgroundTint="#99ffffff"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/lato"
+                android:hint="NOME"
+                android:inputType="textPersonName"
+                android:textColorHint="#99ffffff"
+                app:autoSizeMinTextSize="40sp"
+                app:autoSizeMaxTextSize="60sp"
+                app:autoSizeStepGranularity="2sp" />
+
+            <EditText
+                android:id="@+id/editTextImage"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_weight="0"
+                android:backgroundTint="#99ffffff"
+                android:drawableLeft="@drawable/ic_image"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/lato"
+                android:hint="IMAGEM"
+                android:inputType="textPersonName"
+                android:textColorHint="#99ffffff"
+                app:autoSizeMinTextSize="40sp"
+                app:autoSizeMaxTextSize="60sp"
+                app:autoSizeStepGranularity="2sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/lato"
+            android:layout_centerHorizontal="true"
+            android:letterSpacing="0.1"
+            android:lineSpacingExtra="7dp"
+            android:text="Já tem uma conta?\n"
+            android:layout_marginBottom="30dp"
+            android:textAllCaps="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorText"
+            android:textSize="13sp" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:background="@drawable/round_borderbutton"
+            android:fontFamily="@font/mont"
+            android:layout_centerHorizontal="true"
+            android:text="Registre-se"
+            android:textAllCaps="true"
+            android:textColor="@color/colorText" />
+
+    </RelativeLayout>
+</RelativeLayout>
